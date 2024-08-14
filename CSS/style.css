@@ -22,17 +22,6 @@ section.heroImg{
     width: 500px;
     margin: 0 auto;
 }
-footer{
-    background-color: #373738;
-    vertical-align: bottom;
-    padding: auto;
-}
-footer ul{
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    color:#FFFFFF;
-}
 p{
     text-indent: 5%;
 }
@@ -47,14 +36,32 @@ button {
     font-size: 15px;
     border-radius: 4px;
   }
+/* Footer */
+footer{
+    background-color: #373738;
+    vertical-align: bottom;
+    padding: auto;
+}
+footer ul{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    color:#FFFFFF;
+}
 /* My UX Skills Section */
 .flexContainer {
     display: flex;
     padding: 60px 30px;
+    flex-direction: row;
   }
   .flexContainer div {
     width: 33%;
     padding: 25px;
+  }
+  .flex-item {
+    flex: 33%;
+    padding: 10px;
+    margin: 5px;
   }
 /* My Work Section */
 .myWork {
@@ -63,9 +70,10 @@ button {
     background-color: #EBEBEB;
   }
   .workGrid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 350px 350px 350px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3fr; 
+    gap: 10px;
     grid-template-areas:
     "img1 content1"
     "img2 content2"
@@ -78,25 +86,17 @@ button {
     margin: 0 auto;
     display: block;
   }
-  .img1 {
-    grid-area: img1;
+
+.grid-item {
+    background-color: lightgray; /* Optional: for better visualization */
+    border: 1px solid gray; /* Optional: to visualize items */
+    padding: 20px; /* Optional: add padding inside grid items */
+    text-align: center; /* Optional: center text inside items */
+}
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: #FDF6E7;
+      width: ;
+      padding: ;
+    }
   }
-  .img2 {
-    grid-area: img2;
-  }
-  .img3 {
-    grid-area: img3;
-  }
-  .img1, .img2, .img3, .content1, .content2, .content3 {
-    padding: 80px;
-  }
-  .content1 {
-    grid-area: content1;
-  }
-  .content2 {
-    grid-area: content2;
-  }
-  .content3 {
-    grid-area: content3;
-  }
-  
