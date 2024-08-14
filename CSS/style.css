@@ -1,3 +1,10 @@
+body{
+  background-color: #FDF6E7;
+}
+header{
+  background-color: #98A869;
+  color: white;
+}
 .inline-block{
     display: inline-block;
     vertical-align: top;
@@ -34,14 +41,14 @@ button{
 }
 button {
     padding: 15px;
-    background-color: #373738;
+    background-color: #727E4F;
     color: white;
     font-size: 15px;
     border-radius: 4px;
   }
 /* Footer */
 footer{
-    background-color: #373738;
+    background-color: #98A869;
     vertical-align: bottom;
     padding: auto;
 }
@@ -60,12 +67,11 @@ h3{
 /* My UX Skills Section */
 .flexContainer {
     display: flex;
-    padding: 1fr;
     width: 100%;
+    background-color: #98A869;
   }
   .flex-item {
     flex: 1fr;
-    padding: auto;
     margin: 5px;
     text-align: center;
   }
@@ -73,7 +79,6 @@ h3{
 .myWork {
     padding: 60px 30px;
     padding-top: 0;
-    background-color: #EBEBEB;
   }
   .workGrid {
     display: grid; 
@@ -94,7 +99,8 @@ h3{
   }
 
 .grid-item {
-    background-color: lightgray; 
+    background-color: #4C5435; 
+    color: white;
     border: 1px solid gray; 
     padding: 20px; 
     text-align: center; 
